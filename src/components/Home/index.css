@@ -1,0 +1,24 @@
+.app {
+  margin: 10px;
+}
+#cards{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+#butts{
+    padding-top: 100px;
+      padding-left: 90px;
+}
+#buttss{
+
+      text-align: center;
+}
+
+#buttsss{
+
+        text-align: center;
+}
+h3,h2,h1,AwesomeButton{
+text-align: center;
+}
