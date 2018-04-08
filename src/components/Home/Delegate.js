@@ -29,6 +29,10 @@ var dotStyle = {
 var h1style = {
 	fontWeight: "100"
 }
+var electionDaysStyle = {
+	color: "#29E8B1"
+}
+
 const DelegateIsland = (props) => (
 	<div>
 	<div className = "ui center aligned grid">
@@ -39,7 +43,7 @@ const DelegateIsland = (props) => (
 	  	</div>
 	</div>
 	    <h2>{props.delegate}</h2>
-	    <h3> Next election in {props.nextElection}</h3>
+	    <h3> Next election in <span style = {electionDaysStyle}> {props.nextElection}</span></h3>
     <div id="buttss">
       <div className = "ui center aligned grid">
 				<div className = "twelve wide column">

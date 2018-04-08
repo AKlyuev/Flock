@@ -11,11 +11,15 @@ var h1style = {
 	fontWeight: "100"
 }
 
+var coveredStyle = {
+	color: "#29E2E8"
+}
+
 const ClaimIsland = (props) => (
 
   <div>
   	<h1 style = {h1style} >SUBMIT CLAIM</h1>
-    <h3>Make sure it's covered </h3>
+    <h3>Make sure it's <span style = {coveredStyle}>covered</span>!</h3>
 	<div id="buttsss">
 
 	  	<div className = "ui center aligned grid">

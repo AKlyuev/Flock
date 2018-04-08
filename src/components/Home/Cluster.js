@@ -29,12 +29,14 @@ var divStyle3 = {
 	paddingTop: "70px",
 }
 
+
+
 const ClusterIsland = (props) => (
 	<div>
 	  	<h1 style = {h1style}>MY FLOCK</h1>
 	  	<div style = {divStyle}><h1 style = {nodesValueStyle}>{props.nodes} people</h1></div>
 	  	<div style = {divStyle3}>
-	    <h3>{props.nodeschange} in {props.nodestimeframe}</h3>
+	    <h3>{props.nodeschange} people <span style = {inDaysStyle}>in {props.nodestimeframe}</span></h3>
 	    <br/>
 	    </div>
 	    <div id = "butts">

@@ -9,6 +9,7 @@ import Card from 'semantic-ui-react'
 //import './signin.css'
 import ImageExampleImage from './matthew.js'
 import matthew from "../../assets/images/matthew.png"
+import logo from "../../assets/images/whitesq-drive.png"
 import background from "../../assets/images/background.png"
 
 var sectionStyle = {
@@ -31,7 +32,7 @@ const SignInPage = ({ history }) =>
        <div className="column">
         <div className = "ui middle aligned centered card">
         <div className = "image">
-          <img src={matthew} alt={"matthew"}/>
+          <img src={logo} alt={"flock"}/>
         </div>
         <h1>Sign In</h1>
         
