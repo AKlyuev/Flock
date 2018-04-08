@@ -12,6 +12,7 @@ import ClaimIsland from "./Claim.js"
 import DelegateIsland from "./Delegate.js"
 
 import background from "../../assets/images/background.png"
+import logo1 from  "../../assets/images/drivelogo.png"
 
 
 var backgroundStyle = {
@@ -26,6 +27,22 @@ var sectionStyle = {
   padding:"0",
 }
 
+var buttonStyle = {
+  marginTop: "0px",
+}
+
+var titleStyle =  {
+  paddingTop: "100px",
+}
+
+var gridStyle = {
+  marginTop: "-50px",
+}
+
+
+var logoStyle = {
+  height:"100px",
+}
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -47,7 +64,11 @@ class HomePage extends Component {
     return (
       <div style = {backgroundStyle}>
         <div style = {sectionStyle}>
-        <h1>Home</h1>
+          <div className="ui grid">
+            <div className = "four wide column">
+              <img src = {logo1} style = {logoStyle}/>
+            </div>
+        </div>
 
         {/*
         <form onSubmit={this.onSubmit}>
@@ -60,8 +81,7 @@ class HomePage extends Component {
         </form>
         */}
 
-        <Label image={matthew}/>
-        <GridExampleStretched/>
+        <GridExampleStretched style = {gridStyle} balance = "$47.89" dueindays = "23" nodes = "71" nodeschange = "21+" nodestimeframe="7 days" delegate="Timothy" nextElection = "30 days"/>
         </div>
       </div>
     );

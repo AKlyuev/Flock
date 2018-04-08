@@ -6,6 +6,7 @@
     "autobind-decorator": "^2.1.0",
     "firebase": "^4.12.1",
     "react": "^16.3.0",
+    "react-awesome-button": "^4.2.0",
     "react-dom": "^16.3.0",
     "react-jotform-embed": "^1.0.3",
     "react-router-dom": "^4.2.2",
