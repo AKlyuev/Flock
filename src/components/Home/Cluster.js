@@ -1,24 +1,27 @@
 import React from 'react'
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css';
+import { HistoryLink } from '../History';
 
 var buttonStyle = {
   marginTop: "-10px",
   width: "240px",
+  backgroundColor: "#2dd6ed"
 }
 
 var divStyle = {
-	backgroundColor: "#4282CB",
+	backgroundColor: "#2dd6ed",
 	width: "330px",
 	height:"70px",
 	borderRadius:"5px",
 }
 
 var nodesValueStyle = {
-	paddingTop: "20px",
+	
 	fontSize: "70px",
-	marginBottom: "70px",
-	paddingBottom:"70px"
+	position: "relative",
+	top: "50%",
+	transform: "translateY(-50%)",
 }
 
 var h1style = {
@@ -47,7 +50,7 @@ const ClusterIsland = (props) => (
 			    	<button className="ui blue button" style = {buttonStyle}>View Flock Details</button>
 			    </div>
 			    <div className = " twelve wide column">
-			    	<button className="ui blue button" style = {buttonStyle}>View History</button>
+			    	<HistoryLink />
 			    </div>
 			</div>
 		</div>

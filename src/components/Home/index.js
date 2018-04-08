@@ -10,9 +10,25 @@ import TestButton from "./testbutton.js"
 import BalanceIsland from "./Balance.js"
 import ClaimIsland from "./Claim.js"
 import DelegateIsland from "./Delegate.js"
+import NameBubble from "./NameBubble.js"
+import { Button } from 'semantic-ui-react'
+import { auth } from '../../firebase'
+import {firebase} from "../../firebase"
+
 
 import background from "../../assets/images/background.png"
 import logo1 from  "../../assets/images/logo2.png"
+
+{/*
+var user = auth.doCurrentUsername;
+var user = $firebaseAuth().$getAuth();
+console.log(user);
+if (user) {
+  var name = user.username;
+  console.log(name);
+}
+*/}
+
 
 
 var backgroundStyle = {
@@ -29,6 +45,7 @@ var sectionStyle = {
 
 var buttonStyle = {
   marginTop: "0px",
+  backgroundColor: "#33e0a3"
 }
 
 var titleStyle =  {
@@ -43,6 +60,11 @@ var gridStyle = {
 var logoStyle = {
   height:"100px",
 }
+
+var buttonStyle = {
+  marginTop: "30px"
+}
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -65,8 +87,14 @@ class HomePage extends Component {
       <div style = {backgroundStyle}>
         <div style = {sectionStyle}>
           <div className="ui grid">
-            <div className = "four wide column">
-              <img src = {logo1} style = {logoStyle}/>
+            
+              <div className = "four wide column">
+                <img src = {logo1} style = {logoStyle}/>
+              </div>
+              <div className = "right floated four wide column">
+                
+                <Button style = {buttonStyle} content = "Arsen Klyuev" icon='user' labelPosition='right' />
+              
             </div>
         </div>
 

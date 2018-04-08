@@ -6,12 +6,13 @@ import "./index.css"
 var buttonStyle = {
   marginTop: "-10px",
   width: "240px",
+  backgroundColor: "#33e0a3"
 }
 
 var divStyle = {
 	height: "50px",
 	width: "50px",
-	backgroundColor: "#51B3AC",
+	backgroundColor: "#33e0a3",
 	borderRadius: "25px"
 }
 
@@ -19,7 +20,7 @@ var divStyle = {
 var dotStyle = {
 	height: "75px",
   	width: "75px",
- 	backgroundColor: "#51B3AC",
+ 	backgroundColor: "#33e0a3",
   	borderRadius: "50%",
   	display: "inline-block",
   	marginTop: "-20px",
@@ -29,8 +30,9 @@ var dotStyle = {
 var h1style = {
 	fontWeight: "100"
 }
+
 var electionDaysStyle = {
-	color: "#29E8B1"
+	color: "#33e0a3"
 }
 
 const DelegateIsland = (props) => (

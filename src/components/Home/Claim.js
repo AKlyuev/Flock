@@ -5,6 +5,7 @@ import 'react-awesome-button/dist/styles.css';
 var buttonStyle = {
   marginTop: "-10px",
   width: "240px",
+  backgroundColor: "#2dd6ed"
 }
 
 var h1style = {
@@ -12,7 +13,7 @@ var h1style = {
 }
 
 var coveredStyle = {
-	color: "#29E2E8"
+	color: "#2dd6ed"
 }
 
 const ClaimIsland = (props) => (

@@ -6,20 +6,28 @@ import "./index.css"
 var buttonStyle = {
   marginTop: "-10px",
   width: "240px",
+  backgroundColor: "#33e0a3"
 }
 
 var divStyle = {
-	backgroundColor: "#51B3AC",
+	backgroundColor: "#33e0a3",
 	width: "330px",
 	height:"70px",
 	borderRadius:"5px",
 }
 
 var balanceValueStyle = {
-	paddingTop: "20px",
+	//paddingTop: "-60px",
 	fontSize: "70px",
-	marginBottom: "70px",
-	paddingBottom:"70px"
+	//marginTop: "-20px",
+	//paddingBottom: "20px",
+	//marginBottom: "20px",
+	//textAlign: "center",
+	//verticalAlign: "middle"
+	position: "relative",
+	top: "50%",
+	transform: "translateY(-50%)"
+
 }
 
 var h1style = {

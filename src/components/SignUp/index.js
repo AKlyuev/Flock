@@ -19,6 +19,14 @@ var sectionStyle = {
   backgroundImage: `url(${background})`
 };
 
+var formStyle = {
+  margin: "5px"
+}
+
+var inputStyle = {
+  marginBottom:"5px"
+}
+
 const SignUpPage = ({ history }) =>
   <div style = { sectionStyle }>
     <br/>
@@ -113,7 +121,7 @@ class SignUpForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit} className = "ui middle aligned form">
-      <div className = "ui stacked element">
+      <div className = "ui stacked element" style = {formStyle}>
         <input
           value={username}
           onChange={event => this.setState(updateByPropertyName('username', event.target.value))}
@@ -133,12 +141,14 @@ class SignUpForm extends Component {
           type="password"
           placeholder="Password"
         />
+        <div style = {inputStyle}>
         <input
           value={passwordTwo}
           onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
         />
+        </div>
         <button disabled={isInvalid} type="submit" className = "ui button">
           Sign Up
         </button>

@@ -18,6 +18,14 @@ var sectionStyle = {
   backgroundImage: `url(${background})`
 };
 
+var formStyle = {
+  margin: "5px"
+}
+
+var inputStyle = {
+  marginBottom:"5px"
+}
+
 const SignInPage = ({ history }) =>
   <div style = { sectionStyle }>
     <br/>
@@ -52,6 +60,7 @@ const updateByPropertyName = (propertyName, value) => () => ({
 const INITIAL_STATE = {
   email: '',
   password: '',
+  time:'',
   error: null,
 };
 
@@ -62,10 +71,15 @@ class SignInForm extends Component {
     this.state = { ...INITIAL_STATE };
   }
 
+
+
   onSubmit = (event) => {
+    
+
     const {
       email,
       password,
+      time = Date.now()
     } = this.state;
 
     const {
@@ -89,6 +103,7 @@ class SignInForm extends Component {
       email,
       password,
       error,
+      time
     } = this.state;
 
     const isInvalid =
@@ -96,20 +111,22 @@ class SignInForm extends Component {
       email === '';
 
     return (
-      <form onSubmit={this.onSubmit} className = "ui middle aligned form">
+      <form onSubmit={this.onSubmit} className = "ui middle aligned form" style = {formStyle}>
         <input
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
-        <input
+        <div style = {inputStyle}>
+        <input 
           value={password}
           onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
           type="password"
           placeholder="Password"
         />
-        <button class = "ui button" disabled={isInvalid} type="submit">
+        </div>
+        <button className = "ui button" disabled={isInvalid} type="submit">
           Sign In
         </button>
 
