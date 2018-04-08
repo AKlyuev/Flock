@@ -30,12 +30,17 @@ var divStyle3 = {
 	paddingTop: "70px",
 
 }
+
+var dueInStyle = {
+	fontWeight: "100",
+}
+
 const BalanceIsland = (props) => (
 	<div >
 	  	<h1 style = {h1style}>MY BALANCE</h1>
 	  	<div style = {divStyle}><h1 style = {balanceValueStyle}>{props.balance}</h1></div>
 	    <div style = {divStyle3}>
-	    <h3 >Due in <strong>{props.dueindays}</strong> days</h3>
+	    <h3 ><span style = {dueInStyle}>Due in </span>{props.dueindays} days</h3>
 			<br/>
 		</div>
 

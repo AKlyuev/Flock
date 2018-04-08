@@ -29,7 +29,9 @@ var divStyle3 = {
 	paddingTop: "70px",
 }
 
-
+var inDaysStyle = {
+	fontWeight: "100",
+}
 
 const ClusterIsland = (props) => (
 	<div>
