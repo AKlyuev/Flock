@@ -1,40 +1,16 @@
-# react-firebase-authentication
+# Flock
 
-[![Build Status](https://travis-ci.org/rwieruch/react-firebase-authentication.svg?branch=master)](https://travis-ci.org/rwieruch/react-firebase-authentication)
+https://devpost.com/software/flock-pe5v0b?ref_content=existing_user_added_to_software_team&ref_feature=portfolio&ref_medium=email&utm_campaign=software&utm_content=added_to_software_team&utm_medium=email&utm_source=transactional#app-team
 
-* Found in [Taming the State in React](https://roadtoreact.com/course-details?courseId=TAMING_THE_STATE)
-* [Live](https://react-firebase-authentication.wieruch.com/)
-* [Tutorial](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
+## Idea
 
-## Features
+Built in 36 hours for Bitcamp 2018, Flock is a web application that replaces the insurance broker. Instead of paying premiums to an insurance company and hope that your claims go unfought, you pay into a clustered pool that is used exclusively for medical bills. Using a reward system for correct claim assessment, we have built in a delegate system that audits claims and releases funds in times of need. Flock is not in control of your funds at any point, instead choosing to delegate power to decentralized communities in determining risk, premiums, deductibles, and other aspects of traditional insurance. Without a large company as middleman, the amount we save on wages and fees are directly passed to users.
 
-* uses:
-  * only React (create-react-app)
-  * firebase 4.3.1
-  * react-router 4.2.0
-  * no Redux/MobX
-  * [React's 16.3 context API](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)
-* features:
-  * Sign In
-  * Sign Up
-  * Sign Out
-  * Password Forget
-  * Password Change
-  * Protected Routes with Authorization
-  * Database: Users
+More information can be found on Devpost: https://devpost.com/software/flock-pe5v0b?ref_content=existing_user_added_to_software_team&ref_feature=portfolio&ref_medium=email&utm_campaign=software&utm_content=added_to_software_team&utm_medium=email&utm_source=transactional#app-team
 
-## Installation
+## Code 
 
-* `git clone git@github.com:rwieruch/react-firebase-authentication.git`
-* `cd react-firebase-authentication`
-* `npm install`
-* `npm start`
-* visit http://localhost:3000/
-* Use your own Firebase Credentials
+This is a multiple page React.js web application built using React Router, as well as Firebase for authentication. Users have profiles linked to firebase, and an authentication system is fully set up. The application is composed of custom React components as well as some Semantic UI React components. Items are currently hard-coded, but can accept props. 
 
-### Use your own Firebase Credentials
 
-* visit https://firebase.google.com/ and create a Firebase App
-* copy and paste your Credentials from your Firebase App into src/firebase/firebase.js
-* activate Email/Password Sign-In Method in your Firebase App
-# bc
+
