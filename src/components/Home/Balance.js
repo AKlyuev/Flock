@@ -17,15 +17,13 @@ var divStyle = {
 
 var balanceValueStyle = {
 	paddingTop: "20px",
-	//paddingTop: "-50px",
 	fontSize: "70px",
 	marginBottom: "70px",
 	paddingBottom:"70px"
-	//fontFamily:"Montserrat"
 }
 
-var divStyle2 = {
-	//fontFamily: "Montserrat'",
+var h1style = {
+	fontWeight: "100"
 }
 
 var divStyle3 = {
@@ -33,8 +31,8 @@ var divStyle3 = {
 
 }
 const BalanceIsland = (props) => (
-	<div style = {divStyle2}>
-	  	<h1>MY BALANCE</h1>
+	<div >
+	  	<h1 style = {h1style}>MY BALANCE</h1>
 	  	<div style = {divStyle}><h1 style = {balanceValueStyle}>{props.balance}</h1></div>
 	    <div style = {divStyle3}>
 	    <h3 >Due in <strong>{props.dueindays}</strong> days</h3>

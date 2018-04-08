@@ -1,18 +1,32 @@
 import React from 'react'
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css';
+
+var buttonStyle = {
+  marginTop: "-10px",
+  width: "240px",
+}
+
+var h1style = {
+	fontWeight: "100"
+}
+
 const ClaimIsland = (props) => (
 
   <div>
-  	<h1>CLAIM</h1>
+  	<h1 style = {h1style} >SUBMIT CLAIM</h1>
     <h3>Make sure it's covered </h3>
-<div id="buttsss">
+	<div id="buttsss">
 
-  <br/>
-    <AwesomeButton type = "primary" >File Claim</AwesomeButton>
-    <text> </text>
-    <AwesomeButton type = "primary">Review Status</AwesomeButton>
-    </div>
+	  	<div className = "ui center aligned grid">
+			<div className = "twelve wide column">
+		    	<button className="ui blue button" style = {buttonStyle}>File Claim</button>
+		    </div>
+		    <div className = " twelve wide column">
+		    	<button className="ui blue button" style = {buttonStyle}>Review Status</button>
+		    </div>
+		</div>
+	</div>
 
 </div>
 )

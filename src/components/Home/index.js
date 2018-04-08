@@ -12,7 +12,7 @@ import ClaimIsland from "./Claim.js"
 import DelegateIsland from "./Delegate.js"
 
 import background from "../../assets/images/background.png"
-import logo1 from  "../../assets/images/drivelogo.png"
+import logo1 from  "../../assets/images/logo2.png"
 
 
 var backgroundStyle = {
